@@ -1,0 +1,27 @@
+/* home.css */
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-pop-in {
+  animation: pop-in 0.8s ease-out forwards;
+}
+
+.animate-pop-in-delay {
+  animation: pop-in 0.8s ease-out forwards 0.2s;
+}
+
+.all-button {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
