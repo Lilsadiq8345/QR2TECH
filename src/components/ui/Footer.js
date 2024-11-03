@@ -10,13 +10,13 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-green-700 text-white py-10">
+    <footer className="bg-gray-900 p-4 text-gray-500 py-10">
       <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
         {/* Logo and Contact Info */}
         <div id="contact">
           <img
-            src="./QR2TECH ICON GREEN.jpg"
+            src="./QR2TECH.png"
             alt="Qr2tech-Logo"
             className="mb-12 h-12 bg-white shadow-ld rounded"
           />
@@ -24,16 +24,16 @@ const Footer = () => {
           <p className="mb-2">📞 123-456-7890</p>
           <p className="mb-4">✉️ Qr2tech.com</p>
           <div className="flex space-x-4">
-            <a href="https://facebook.com" aria-label="Facebook" className="text-white hover:text-gray-300">
+            <a href="https://facebook.com" aria-label="Facebook" className="text-purple-700 hover:text-purple-800">
               <FontAwesomeIcon icon={faFacebook} size="lg" />
             </a>
-            <a href="https://twitter.com" aria-label="Twitter" className="text-white hover:text-gray-300">
+            <a href="https://twitter.com" aria-label="Twitter" className="text-purple-700 hover:text-purple-800">
               <FontAwesomeIcon icon={faTwitter} size="lg" />
             </a>
-            <a href="https://instagram.com" aria-label="Instagram" className="text-white hover:text-gray-300">
+            <a href="https://instagram.com" aria-label="Instagram" className="text-purple-700 hover:text-purple-800">
               <FontAwesomeIcon icon={faInstagram} size="lg" />
             </a>
-            <a href="https://linkedin.com" aria-label="LinkedIn" className="text-white hover:text-gray-300">
+            <a href="https://linkedin.com" aria-label="LinkedIn" className="text-purple-700 hover:text-purple-800">
               <FontAwesomeIcon icon={faLinkedin} size="lg" />
             </a>
           </div>
@@ -41,34 +41,34 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div>
-          <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+          <h4 className="text-lg font-semibold mb-4 text-white">Quick Links</h4>
           <ul className="space-y-2">
             <li>
               <a
                 href="/#home"
                 onClick={handleHomeClick}
-                className="hover:text-gray-300 cursor-pointer"
+                className="hover:text-purple-700 cursor-pointer"
               >
                 Home
               </a>
             </li>
-            <li><a href="/faq" className="hover:text-gray-300">About Company</a></li>
+            <li><a href="/about" className="hover:text-purple-700">About Company</a></li>
           </ul>
         </div>
 
         {/* Our Mission Links */}
         <div>
-          <h4 className="text-lg font-semibold mb-4">Our Mission</h4>
+          <h4 className="text-lg font-semibold mb-4 text-white">Our Mission</h4>
           <ul className="space-y-2">
-            <li><a href="/contact" className="hover:text-gray-300">Contacts</a></li>
-            <li><a href="/privacy-policy" className="hover:text-gray-300">Privacy Policy</a></li>
-            <li><a href="/faq" className="hover:text-gray-300">FAQ Pages</a></li>
+            <li><a href="/#contact" className="hover:text-purple-700">Contacts</a></li>
+            <li><a href="/notfound" className="hover:text-purple-700">Privacy Policy</a></li>
+            <li><a href="/faq" className="hover:text-purple-700">FAQ Pages</a></li>
           </ul>
         </div>
 
         {/* Newsletter Subscription */}
         <div>
-          <h4 className="text-lg font-semibold mb-4">Newsletter</h4>
+          <h4 className="text-lg font-semibold mb-4 text-white">Newsletter</h4>
           <p className="mb-4">Subscribe to receive inspiration, ideas & news in your inbox</p>
           <form className="flex">
             <input
@@ -76,7 +76,7 @@ const Footer = () => {
               placeholder="Your email"
               className="p-2 w-full md:w-auto rounded-l-md border-none focus:outline-none text-black"
             />
-            <button className="bg-green-500 px-4 py-2 rounded-r-md text-white hover:bg-green-600">
+            <button className="bg-purple-700 px-4 py-2 rounded-r-md text-white hover:bg-purple-800">
               Subscribe
             </button>
           </form>

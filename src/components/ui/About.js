@@ -1,30 +1,45 @@
 import React from 'react';
+import Navbar from '../ui/Navbar';
+import Footer from '../ui/Footer';
 
-const About = () => {
+function About() {
   return (
-    <>
-      {/* About Us Section */}
-      <section
-        id="about"
-        className="mt-40 mb-12 p-6 max-w-6xl mx-auto text-center bg-gradient-to-r from-green-600 to-teal-500 text-white rounded-xl shadow-lg lg:flex lg:items-center lg:gap-6"
-      >
-        <div className="lg:w-1/2">
-          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 font-poppins">About Us</h3>
-          <p className="text-lg leading-7 font-poppins">
-            REM Farms is a future-oriented agricultural investment platform. Our goal is to empower
-            investors to participate in sustainable agricultural ventures. With a focus on transparency,
-            profitability, and easy access, we bridge the gap between technology and farming.
-          </p>
-        </div>
-        <img
-          src="/farm.jpeg"
-          alt="Farming Illustration"
-          className="mt-6 lg:mt-0 lg:w-1/2 rounded-lg shadow-md"
-        />
-      </section>
+    <section className="bg-gray-100 py-16 mb-20 mt-20">
+      <Navbar />
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-8">Welcome to Qr2tech</h2>
+        <p className="text-lg text-center mb-8">
+          Your AI-Powered Solution Partner
+        </p>
+        <p className="text-lg text-center mb-8">
+          Qr2tech excels at solving complex problems and creating innovative AI-driven solutions to transform your business. From data analysis to advanced web development, we push the boundaries of technology to deliver impactful solutions.
+        </p>
 
-    </>
+        {/* Our Team Section */}
+        <h2 className="text-2xl font-bold text-center mt-16 mb-8">Our Team</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="text-center">
+            <img src="/habeeb.jpeg" alt="Team Member 1" className="w-24 h-24 rounded-full mx-auto mb-4" />
+            <h3 className="text-xl font-bold mb-2">Dr. Habeeb Balogun</h3>
+            <p className="text-gray-500">CEO & Founder</p>
+          </div>
+          <div className="text-center">
+            <img src="/lilsadiq.jpeg" alt="Team Member 2" className="w-24 h-24 rounded-full mx-auto mb-4" />
+            <h3 className="text-xl font-bold mb-2">Abubakar Abdulrazak</h3>
+            <p className="text-gray-500">Chief Technology Officer</p>
+          </div>
+          <div className="text-center">
+            <img src="/mike.png" alt="Team Member 3" className="w-24 h-24 rounded-full mx-auto mb-4" />
+            <h3 className="text-xl font-bold mb-2">Mike Johnson</h3>
+            <p className="text-gray-500">Senior Developer</p>
+          </div>
+        </div>
+
+      </div>
+      <Footer />
+    </section>
+
   );
-};
+}
 
 export default About;

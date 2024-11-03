@@ -17,16 +17,16 @@ function Navbar() {
     return (
         <header className="fixed top-0 left-0 w-full flex items-center justify-between px-4 md:px-6 py-3 md:py-4 bg-white shadow-md z-50">
             {/* Logo and Title */}
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 text-purple">
                 <img
-                    src="/QR2TECH ICON GREEN.jpg"
+                    src="/QR2TECH.png"
                     alt="qr2tech logo"
                     onClick={scrollToTop}
-                    className="w-8 h-8 md:w-12 md:h-12 cursor-pointer"
+                    className="w-8 h-8 md:w-12 md:h-12 cursor-pointer  "
                 />
                 <h1
                     onClick={scrollToTop}
-                    className="text-lg md:text-xl font-semibold text-gray-800 cursor-pointer hover:text-green-500"
+                    className="text-lg md:text-xl font-semibold text-purple-600 cursor-pointer hover:text-purple-700"
                 >
                     Qr2tech
                 </h1>
@@ -35,19 +35,17 @@ function Navbar() {
             {/* Navigation Links and Contact Us Button for Desktop */}
             <div className="hidden md:flex items-center space-x-6">
                 <nav className="flex space-x-6 text-gray-700">
-                    <a href="#home" onClick={scrollToTop} className="hover:text-green-500">
+                    <a href="/home" onClick={scrollToTop} className="hover:text-purple-700">
                         Home
                     </a>
-                    <a href="#products" className="hover:text-green-500">
-                        Products
-                    </a>
-                    <a href="#about" className="hover:text-green-500">
+
+                    <a href="/about" className="hover:text-purple-700">
                         About
                     </a>
                 </nav>
                 <a
-                    href="#contact"
-                    className="px-4 py-2 text-white bg-green-500 rounded-full hover:bg-green-600 transition duration-200"
+                    href="/#contact"
+                    className="px-4 py-2 text-white bg-purple-600 rounded-full hover:bg-purple-800 transition duration-200"
                 >
                     Contact Us
                 </a>
@@ -75,19 +73,17 @@ function Navbar() {
                     >
                         &times;
                     </button>
-                    <a href="#home" onClick={() => { scrollToTop(); toggleMobileMenu(); }} className="text-lg hover:text-green-500">
+                    <a href="/home" onClick={() => { scrollToTop(); toggleMobileMenu(); }} className="text-lg hover:text-purple-700">
                         Home
                     </a>
-                    <a href="#products" onClick={toggleMobileMenu} className="text-lg hover:text-green-500">
-                        Products
-                    </a>
-                    <a href="#about" onClick={toggleMobileMenu} className="text-lg hover:text-green-500">
+
+                    <a href="/about" onClick={toggleMobileMenu} className="text-lg hover:text-purple-700">
                         About
                     </a>
                     <a
-                        href="#contact"
+                        href="/#contact"
                         onClick={toggleMobileMenu}
-                        className="px-6 py-3 text-white bg-green-500 rounded-full hover:bg-green-600 transition duration-200"
+                        className="px-6 py-3 text-white bg-purple-600 rounded-full hover:bg-purple-800 transition duration-200"
                     >
                         Contact Us
                     </a>

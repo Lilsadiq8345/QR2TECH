@@ -22,7 +22,6 @@ header {
 
   .flex.items-center.space-x-2 img {
     width: 24px;
-    /* Adjust logo size */
     height: 24px;
   }
 }

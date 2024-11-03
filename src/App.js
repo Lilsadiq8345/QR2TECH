@@ -3,9 +3,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
 import About from './components/ui/About';
+import NotFoundPage from './components/pages/NotFoundPage';
 import ScrollToTop from './components/ui/ScrollToTop';
 import Faq from './components/ui/Faq';
-import ContactSection from './components/pages/ContactSection';
 
 
 
@@ -29,8 +29,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/notfound" element={<NotFoundPage />} />
         <Route path="/faq" element={<Faq />} />
-        <Route path="/contact" element={<ContactSection />} />
 
         {/* Scrollable Sections */}
         <Route
@@ -40,6 +40,7 @@ const App = () => {
         <Route
           path="/about"
           element={<div onLoad={() => handleNavigation('about')}></div>}
+
         />
         <Route
           path="/contact"
