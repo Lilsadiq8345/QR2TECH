@@ -44,13 +44,19 @@ const Home = () => {
 
             {/* Hero Section */}
             <section className="hero relative flex items-center justify-start min-h-screen p-6 sm:p-10 text-white mb-6 mt-6" id="home">
-                <img src="/qr2te.png" alt="QR2 Tech" className="absolute inset-0 w-full h-full object-cover " />
+                <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px]">
+                    <img
+                        src="/qr2te.png"
+                        alt="QR2 Tech"
+                        className="absolute inset-0 w-full h-full object-cover"
+                    />
 
-                <div className="text-container bg-black bg-opacity-60 p-4 sm:p-6 lg:p-10 rounded-lg max-w-xs sm:max-w-sm lg:max-w-md text-left relative z-10 animate-pop-in">
-                    <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-100 mb-3 animate-pop-in-delay">Welcome to Qr2tech</h1>
-                    <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-300 mb-4 animate-pop-in-delay2">Your AI-Powered Solution Partner</h2>
-                    <p className="text-sm sm:text-base lg:text-lg text-gray-300 mb-2 animate-pop-in-delay3">QR2Tech excels at solving complex problems and creating innovative AI-driven solutions to transform your business.</p>
-                    <p className="text-sm sm:text-base lg:text-lg text-gray-300 animate-pop-in-delay4">From data analysis to advanced web development, we push the boundaries of technology to deliver impactful solutions.</p>
+                    <div className="text-container mt-20  bg-black bg-opacity-60 p-4 sm:p-6 lg:p-10 rounded-lg max-w-xs sm:max-w-sm lg:max-w-md text-left relative z-10 animate-pop-in">
+                        <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-100 mb-3 animate-pop-in-delay">Welcome to Qr2tech</h1>
+                        <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-300 mb-4 animate-pop-in-delay2">Your AI-Powered Solution Partner</h2>
+                        <p className="text-sm sm:text-base lg:text-lg text-gray-300 mb-2 animate-pop-in-delay3">QR2Tech excels at solving complex problems and creating innovative AI-driven solutions to transform your business.</p>
+                        <p className="text-sm sm:text-base lg:text-lg text-gray-300 animate-pop-in-delay4">From data analysis to advanced web development, we push the boundaries of technology to deliver impactful solutions.</p>
+                    </div>
                 </div>
             </section>
 
