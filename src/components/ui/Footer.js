@@ -24,16 +24,16 @@ const Footer = () => {
           <p className="mb-2">📞 123-456-7890</p>
           <p className="mb-4">✉️ Qr2tech.com</p>
           <div className="flex space-x-4">
-            <a href="https://facebook.com" aria-label="Facebook" className="text-purple-700 hover:text-purple-800">
+            <a href="https://facebook.com" aria-label="Facebook" className="text-[#7a00a6] hover:text-purple-800">
               <FontAwesomeIcon icon={faFacebook} size="lg" />
             </a>
-            <a href="https://twitter.com" aria-label="Twitter" className="text-purple-700 hover:text-purple-800">
+            <a href="https://twitter.com" aria-label="Twitter" className="text-[#7a00a6] hover:text-purple-800">
               <FontAwesomeIcon icon={faTwitter} size="lg" />
             </a>
-            <a href="https://instagram.com" aria-label="Instagram" className="text-purple-700 hover:text-purple-800">
+            <a href="https://instagram.com" aria-label="Instagram" className="text-[#7a00a6] hover:text-purple-800">
               <FontAwesomeIcon icon={faInstagram} size="lg" />
             </a>
-            <a href="https://linkedin.com" aria-label="LinkedIn" className="text-purple-700 hover:text-purple-800">
+            <a href="https://linkedin.com" aria-label="LinkedIn" className="text-[#7a00a6] hover:text-purple-800">
               <FontAwesomeIcon icon={faLinkedin} size="lg" />
             </a>
           </div>

@@ -12,7 +12,7 @@ function Faq() {
         <div className="space-y-6">
           {/* General FAQ Item */}
           <details className="p-4 border rounded-xl group">
-            <summary className="flex items-center font-semibold cursor-pointer hover:text-green-600">
+            <summary className="flex items-center font-semibold cursor-pointer hover:text-[#7a00a6]">
               <span className="text-xl mr-3 group-open:hidden">+</span>
               <span className="text-xl mr-3 hidden group-open:inline">−</span>
               What is QR2Tech?
@@ -24,7 +24,7 @@ function Faq() {
 
           {/* Services FAQ Item */}
           <details className="p-4 border rounded-xl group">
-            <summary className="flex items-center font-semibold cursor-pointer hover:text-green-600">
+            <summary className="flex items-center font-semibold cursor-pointer hover:text-[#7a00a6]">
               <span className="text-xl mr-3 group-open:hidden">+</span>
               <span className="text-xl mr-3 hidden group-open:inline">−</span>
               What services do you offer?
@@ -42,7 +42,7 @@ function Faq() {
 
           {/* Pricing FAQ Item */}
           <details className="p-4 border rounded-xl group">
-            <summary className="flex items-center font-semibold cursor-pointer hover:text-green-600">
+            <summary className="flex items-center font-semibold cursor-pointer hover:text-[#7a00a6]">
               <span className="text-xl mr-3 group-open:hidden">+</span>
               <span className="text-xl mr-3 hidden group-open:inline">−</span>
               How much do your services cost?
@@ -54,7 +54,7 @@ function Faq() {
 
           {/* Contact FAQ Item */}
           <details className="p-4 border rounded-xl group">
-            <summary className="flex items-center font-semibold cursor-pointer hover:text-green-600">
+            <summary className="flex items-center font-semibold cursor-pointer hover:text-[#7a00a6]">
               <span className="text-xl mr-3 group-open:hidden">+</span>
               <span className="text-xl mr-3 hidden group-open:inline">−</span>
               How can I contact you?

@@ -1,19 +1,12 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Navbar from '../ui/Navbar';
 import Footer from '../ui/Footer';
 import './Home.css';
 
 const Home = () => {
-    const [selectedProject, setSelectedProject] = useState(null);
-    const projectCardsRef = useRef(null);
     const teamCardsRef = useRef(null);
 
-    const projects = [
-        { id: 1, image: 'rem-farms.png', title: 'Rem Farm', logo: 'REM FARM LOGO 6.png', description: 'A farming as a service infrastructure, where contemporary technology meets farming.' },
-        { id: 2, image: 'data-scientist.jpg', title: 'Better Life', logo: 'company-logo.png', description: 'An innovative solution designed to streamline business processes, enhance productivity, and drive growth through cutting-edge technology.' },
-        { id: 3, image: 'artificial-intelligence.jpg', title: 'Gidi Up', logo: 'company-logo.png', description: 'Provides comprehensive services for managing and optimizing your IT infrastructure, ensuring seamless operations.' },
-        { id: 4, image: 'robot-technology.jpg', title: 'Xplorer', logo: 'company-logo.png', description: 'Offers unparalleled solutions for data analytics and business intelligence, empowering you to make data-driven decisions.' },
-    ];
+
 
     const teamMembers = [
         { id: 1, image: '82c3511673a90c9b2cdbd1e430e6d67b.jpg', title: 'Artificial Intelligence & Machine Learning', description: 'Our people use the latest scientific techniques and advanced analytical methods to solve real-life challenges.' },
@@ -36,22 +29,14 @@ const Home = () => {
             }
         };
 
-        const projectScrollInterval = setInterval(() => scrollLoop(projectCardsRef), 5);
         const teamScrollInterval = setInterval(() => scrollLoop(teamCardsRef), 10);
 
         return () => {
-            clearInterval(projectScrollInterval);
             clearInterval(teamScrollInterval);
         };
     }, []);
 
-    const handleProjectClick = (project) => {
-        setSelectedProject(project);
-    };
 
-    const handleCloseModal = () => {
-        setSelectedProject(null);
-    };
 
     return (
         <>
@@ -59,10 +44,8 @@ const Home = () => {
 
             {/* Hero Section */}
             <section className="hero relative flex items-center justify-start min-h-screen p-6 sm:p-10 text-white mb-6 mt-6" id="home">
-                <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover opacity-60">
-                    <source src="/robot.mov" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+                <img src="/qr2te.png" alt="QR2 Tech" className="absolute inset-0 w-full h-full object-cover " />
+
                 <div className="text-container bg-black bg-opacity-60 p-4 sm:p-6 lg:p-10 rounded-lg max-w-xs sm:max-w-sm lg:max-w-md text-left relative z-10 animate-pop-in">
                     <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-100 mb-3 animate-pop-in-delay">Welcome to Qr2tech</h1>
                     <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-300 mb-4 animate-pop-in-delay2">Your AI-Powered Solution Partner</h2>
@@ -74,7 +57,7 @@ const Home = () => {
             {/* About Section */}
             <section className="flex flex-col md:flex-row items-center p-6 sm:p-8 md:p-16 space-y-6 md:space-y-0 md:space-x-6 lg:space-x-8 bg-white">
                 <div className="flex-1 text-center md:text-left">
-                    <h3 className="text-purple-500 font-semibold text-lg md:text-xl mb-6">Simulated Intelligence</h3>
+                    <h3 className="text-[#7a00a6] font-semibold text-lg md:text-xl mb-6">Simulated Intelligence</h3>
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight mb-4 text-gray-800 italic">
                         Mission is to bring the force of simulated intelligence Technologies for a Better Tomorrow
                     </h2>
@@ -114,40 +97,9 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Projects Section */}
-            <section id="projects" className="case-studies py-16">
-                <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-8 ml-4 md:ml-8"><i style={{ fontStyle: 'italic' }}>Our Successful Projects</i></h2>
-                <button className="all-button bg-purple-700 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded ml-4 md:ml-4"><a href="/notfound">All Cases Read Now</a></button>
-                <div className="project-cards flex overflow-x-auto px-4 md:px-8 space-x-4" ref={projectCardsRef}>
-                    {projects.concat(projects).map((project, index) => (
-                        <div
-                            key={index}
-                            className="project-card flex-shrink-0 w-72 md:w-80 bg-white shadow-md rounded-lg p-6 cursor-pointer transition-transform hover:scale-105"
-                            onClick={() => handleProjectClick(project)}
-                        >
-                            <img src={project.image} alt={project.title} className="w-full h-40 md:h-48 object-fit rounded-t-lg" />
-                            <div className="project-info mt-4">
-                                <img src={project.logo} alt="Company Logo" className="w-8 h-8 mb-2" />
-                                <h3 className="text-lg font-bold">{project.title}</h3>
-                            </div>
-                        </div>
-                    ))}
-                </div>
 
-            </section>
 
-            {/* Modal for selected project */}
-            {selectedProject && (
-                <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-                    <div className="bg-white p-6 rounded-lg shadow-md max-w-md w-full mx-4">
-                        <h2 className="text-2xl font-bold mb-4">{selectedProject.title}</h2>
-                        <p className="mb-4">{selectedProject.description}</p>
-                        <button onClick={handleCloseModal} className="bg-gray-300 hover:bg-gray-400 text-gray-700 font-bold py-2 px-4 rounded">
-                            Close
-                        </button>
-                    </div>
-                </div>
-            )}
+
 
             <Footer />
         </>
